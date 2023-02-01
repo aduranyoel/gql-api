@@ -1,0 +1,42 @@
+type User {
+    id: ID
+    email: String
+    firstname: String
+    lastname: String
+    gender: String
+    imageUrl: String
+    createdAt: String
+    friends: [User]
+}
+
+input UsersInput {
+    page: Int
+    limit: Int
+}
+
+type UserPage {
+    rows: [User]
+    pagination: Pagination
+}
+
+input CreateUserInput {
+    email: String
+    firstname: String
+    lastname: String
+    gender: String
+    imageUrl: String
+}
+
+input UpdateUserInput {
+    id: ID!
+    email: String
+    firstname: String
+    lastname: String
+    gender: String
+    imageUrl: String
+}
+
+input AddFriendInput {
+    user: ID!
+    friend: ID!
+}

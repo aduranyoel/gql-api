@@ -1,0 +1,24 @@
+{
+  "name": "gql-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": "true",
+  "workspaces": ["./projects/*"],
+  "scripts": {
+    "test": "npm run test --workspaces --if-present",
+    "build": "npm run build --workspaces --if-present",
+    "dev": "npm run dev --workspaces --if-present"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoet92/gql-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yoet92/gql-api/issues"
+  },
+  "homepage": "https://github.com/yoet92/gql-api#readme"
+}

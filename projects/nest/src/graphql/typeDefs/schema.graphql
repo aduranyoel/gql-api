@@ -1,0 +1,15 @@
+type Query {
+    users(input: UsersInput): UserPage
+    userFriend(input: UsersInput): UserPage
+    user(userId: ID!): User
+}
+
+type Mutation {
+    createUser(input: CreateUserInput!): User
+    createUserFriend(input: CreateUserInput!): User
+    updateUser(input: UpdateUserInput!): Boolean
+    updateUserFriend(input: UpdateUserInput!): Boolean
+    addFriend(input: AddFriendInput!): Boolean
+    removeUser(userId: ID!): Boolean
+    removeUserFriend(userId: ID!): Boolean
+}
